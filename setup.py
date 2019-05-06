@@ -38,6 +38,11 @@ setup(
     version='0.1',
     packages=find_packages(),
     include_package_data=True,
+    package_data={
+        # If any package contains *.txt or *.rst files, include them:
+        '': ['*.json'],
+        # And include any *.msg files found in the 'hello' package, too:
+    }
     install_requires=[
         'Click',
     ],
