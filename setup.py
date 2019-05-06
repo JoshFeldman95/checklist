@@ -42,7 +42,7 @@ setup(
         # If any package contains *.txt or *.rst files, include them:
         '': ['*.json'],
         # And include any *.msg files found in the 'hello' package, too:
-    }
+    },
     install_requires=[
         'Click',
     ],
