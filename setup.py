@@ -1,6 +1,7 @@
 from setuptools import setup, find_packages
 from setuptools.command.install import install
 import re
+import os
 
 class CustomInstallCommand(install):
     """Customized setuptools install command - prints a friendly greeting."""
