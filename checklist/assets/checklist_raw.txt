@@ -1,0 +1,20 @@
+1/11. Missing perspectives: We have a system to collaborate and build trust with community members, particularly historically marginalized community members, on an ongoing basis.
+2/11. Diverse Team: Our team is representative of the community we’re collaborating with.
+3/11. Community Collaboration: We collaborated with community members on an ongoing basis to:
+	a. see what is already working and whether we can help amplify these solutions,
+	b. set the objectives for the project 
+	c. identify sources of bias that could be introduced during data collection/survey design,
+	d. define what successful/beneficial/just outcomes look like and what unsuccessful/harmful/unjust outcomes look like,
+	e. select the inputs to our model and define our metrics,
+	f. understand what types of explanations will be needed,
+	g. identify and prevent unintended uses and abuse of the model,
+	h. develop a system to identify if our model inflicts harm, and what should be done if this occurs.
+4/11. Fair Compensation: Those who created our data, infrastructure, and hardware were fairly compensated.
+5/11. Privacy Best Practices: We proactively considered the privacy of individuals in our training data and of our users (i.e. minimize exposure of personally identifiable information, only collect necessary information, encryption at rest and in transit, data deletion plan, etc.)
+6/11. Consent: If we are using data on human subjects, they have provided (a) Freely given, (b) Reversible, (c) Informed, (d) Enthusiastic, and (e) Specific consent.
+7/11. Met Standards Set by Community: We have assessed with community members whether our system meets the criteria they defined, disaggregated across intersecting identities (i.e. we meet the criteria not just for Black people and women, but also for Black women)
+8/11. Honest and Intersectional Representation: our visualizations, summary statistics, and reports honestly illustrate outcomes across intersecting identities.
+9/11. Roll back: We have tested turning off or rolling back the model in production.
+10/11. Auditability: The process of generating the analysis is well documented and reproducible, and we have provided a method for the public sector and civil society to safely access our data and models.
+11/11. Should This Exist: We still think we should build this.
+
