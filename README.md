@@ -4,7 +4,7 @@
 
 This is a python package that helps data science projects better align with
 the [Design Justice Network principles](http://designjusticenetwork.org/network-principles).
-This is accomplished via checklists. This checklist tries not to reduce the complexity of making just software to a series of steps, but rather tries to help you manage this complexity.
+This is accomplished via checklists. The checklist tries not to reduce  the complexity of "ethical machine learning" to a series of steps, but rather tries to help you manage this complexity.
 
 Checklists are filled out in the command line. There are two ways of calling the checklist. Whenever you call `git push` the checklist will automatically be triggered. Additionally, if you type the command `checklist` in the command line, it will also trigger the checklist.
 
@@ -21,14 +21,14 @@ The checklist included in this package is as follows:
 1.	**Missing perspectives:** We have a system to collaborate and build trust with community members, particularly historically marginalized community members, on an ongoing basis.
 2.	**Diverse Team:** Our team is representative of the community we’re collaborating with and includes historically marginalized voices.
 3.	**Community Collaboration:** We collaborated with community members on an ongoing basis to:
-  1.	see what is already working and whether we can help amplify these solutions,
-  2.	set the objectives for the project,
-  3.	identify sources of bias that might be introduced during data collection/survey design,
-  4.	define what successful/beneficial/just outcomes look like and what unsuccessful/harmful/unjust outcomes look like,
-  5.	select the inputs to our model and define our metrics,
-  6.	understand what types of explanations will be needed,
-  7.	identify and prevent unintended uses and abuse of the model,
-  8.	develop a system to identify if our model inflicts harm, and what should be done if this occurs.
+    -	see what is already working and whether we can help amplify these solutions,
+    -	set the objectives for the project,
+    -	identify sources of bias that might be introduced during data collection/survey design,
+    -	define what successful/beneficial/just outcomes look like and what unsuccessful/harmful/unjust outcomes look like,
+    -	select the inputs to our model and define our metrics,
+    -	understand what types of explanations will be needed,
+    -	identify and prevent unintended uses and abuse of the model,
+    -	develop a system to identify if our model inflicts harm, and what should be done if this occurs.
 4.	**Fair Compensation:** Those who created our data, infrastructure, and hardware were fairly compensated.
 5.	**Privacy Best Practices:** We proactively considered the privacy of individuals in our training data and of our users (i.e. minimize exposure of personally identifiable information, only collect necessary information, encryption at rest and in transit, data deletion plan, etc.)
 6.	**Consent:** If we are using data on human subjects, they have provided (a) Freely given, (b) Reversible, (c) Informed, (d) Enthusiastic, and (e) Specific consent.
