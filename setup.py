@@ -8,17 +8,17 @@ class CustomInstallCommand(install):
     def run(self):
         print("Hello, developer, how are you? :)")
         alias = """
-        # adds checklist to git push
-        function git {
-          if [[ "$1" == "push" && "$@" != *"--help"* ]]; then
-            shift 1
-            command checklist
-            command git push "$@"
-          else
-            command git "$@"
-          fi
-        }
-        """
+# adds checklist to git push
+function git {
+  if [[ "$1" == "push" && "$@" != *"--help"* ]]; then
+    shift 1
+    command checklist
+    command git push "$@"
+  else
+    command git "$@"
+  fi
+}
+"""
         pattern = re.compile(alias)
 
         homefolder = os.path.expanduser('~')
@@ -31,6 +31,7 @@ class CustomInstallCommand(install):
             out = open(bashrc, 'a')
             out.write('\n%s' % alias)
             out.close()
+        os.system('source ~/.bash_profile')
         install.run(self)
 
 setup(
