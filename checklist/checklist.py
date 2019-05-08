@@ -13,6 +13,7 @@ class Checklist(object):
     def __init__(self, warnings, items):
         self.warnings = warnings
         self.items = items
+        self.format()
 
     @classmethod
     def read(cls, filepath):
@@ -23,3 +24,18 @@ class Checklist(object):
         items = data['items']
 
         return cls(warnings, items)
+
+    def format(self):
+        self.warnings = [self.format_str(w) for w in self.warnings]
+        self.items = [self.format_str(i) for i in self.items]
+
+    def format_str(self, str, line_len = 80):
+        current_line_len = 0
+        lines = [[]]
+        for word in str.split(' '):
+            if current_line_len + len(word) > line_len:
+                lines.append([])
+                current_line_len = 0
+            lines[-1].append(word)
+            current_line_len += (len(word) + 1)
+        return "\n".join([" ".join(line) for line in lines])
