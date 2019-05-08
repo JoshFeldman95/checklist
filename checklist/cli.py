@@ -3,12 +3,14 @@ from .checklist import load_checklist
 
 @click.command()
 def main():
-    """Example script."""
     cl = load_checklist()
+
+    # print warnings
     for idx, w in enumerate(cl.warnings, 1):
         click.echo(f"\nWARNING {idx}: "+w)
     click.echo('\n')
 
+    # print checklist
     completed = {}
     for itm in cl.items:
         completed[itm] = click.confirm(itm)
