@@ -7,14 +7,17 @@ This is accomplished via checklists. The checklist tries not to reduce  the comp
 Checklists are filled out in the command line. There are two ways of calling the checklist. Whenever you call `git push` the checklist will automatically be triggered. Additionally, if you type the command `checklist` in the command line, it will also trigger the checklist.
 
 For more information on the background, explanation, and justification for this tool, please see the 3 short essays/blog posts available [here](https://github.com/JoshFeldman95/checklist/tree/master/posts).
+
 # Installation
 
-To insall the checklist tool, run `pip install git+https://github.com/JoshFeldman95/checklist.git`.
+To install the checklist tool, run:
+
+`pip install git+https://github.com/JoshFeldman95/checklist.git`.
 
 **Recommended, but not required:**
 Life is busy, so to remind you to complete the checklist, we recommend overriding the `git push` command so that when it is called, the checklist is triggered. You can always also trigger the checklist by typing `checklist` into the command line.
 
-To override `git push`, put the following script in your `.bash_profile`:
+To override `git push`, put the following script in your `.bash_profile` and restart the terminal:
 
 ```
 # adds checklist to git push
