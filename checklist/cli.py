@@ -14,5 +14,7 @@ def main():
     completed = {}
     for itm in cl.items:
         completed[itm] = click.confirm(itm)
+        
+    # print percent complete
     pct_complete = round(sum(completed.values())/len(completed.values())*100)
     click.echo(f'{pct_complete}% of items completed.')

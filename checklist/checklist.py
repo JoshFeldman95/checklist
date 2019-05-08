@@ -13,7 +13,6 @@ class Checklist(object):
     def __init__(self, warnings, items):
         self.warnings = warnings
         self.items = items
-        self.format()
 
     @classmethod
     def read(cls, filepath):
