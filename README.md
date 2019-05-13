@@ -14,6 +14,10 @@ To install the checklist tool, run:
 
 `pip install git+https://github.com/JoshFeldman95/checklist.git`.
 
+# Usage
+
+You can run the checklist by calling `checklist` from the command line.
+
 **Recommended, but not required:**
 Life is busy, so to remind you to complete the checklist, we recommend overriding the `git push` command so that when it is called, the checklist is triggered. You can always also trigger the checklist by typing `checklist` into the command line.
 
